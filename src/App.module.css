@@ -1,0 +1,24 @@
+.fieldset {
+  display: grid;
+  column-gap: rem(20);
+  row-gap: rem(20);
+  grid-template-columns: repeat(3, 1fr);
+  width: rem(800);
+  margin-top: rem(40);
+}
+
+.title {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.summary {
+  grid-column: 1 / span 3;
+  border: 1px solid var(--mantine-color-gray-3);
+  border-left: 4px solid var(--mantine-primary-color-filled);
+}
+
+.button {
+  grid-column: 1 / span 3;
+  justify-self: end;
+}
